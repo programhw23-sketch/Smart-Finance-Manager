@@ -8,21 +8,17 @@
 
 ### 1. 登入與權限管理
 系統支援多使用者註冊與登入，確保個人財務資料的安全與隱私。
-![登入頁面](image_027204.png)
+![登入頁面](login_page.png)
 
 ### 2. 財務主控台與收支紀錄
 直覺的側邊欄導覽，支援快速新增收支紀錄，並提供完整的歷史明細表格。
-![新增紀錄](image_027261.png)
-![收支明細](image_0272dd.png)
+![新增紀錄](add_record.png)
+![收支明細](log.png)
 
 ### 3. 圖表分析與預算設定
 整合 Matplotlib 自動生成支出比例圓餅圖，並可自定義每月預算上限。
-![圖表分析](image_02729d.png)
-![預算設定](image_0272fe.png)
-
-### 4. 財務健檢建議
-系統根據當前支出與預算的比例，自動給予財務狀態回饋與專業建議。
-![財務健檢](image_0272bb.png)
+![圖表分析](Finance_analysis.png)
+![預算設定](Financial_health.png)
 
 ---
 
@@ -41,15 +37,20 @@
 
 本專案採用 **MVC (Model-View-Controller)** 的設計思想開發：
 
-* **Model (資料層)**：`DBManager` 類別，負責 SQLite 資料庫的 CRUD 操作。
+* **Model (資料層)**：`DBManager` 類別，負責所有 SQLite 資料庫的操作。
 * **View / Controller (介面與邏輯層)**：`FinanceApp` 類別，負責 Tkinter GUI 渲染與業務邏輯處理。
+
+
+
+[Image of Model-View-Controller architecture diagram]
+
 
 ---
 
 ## 🛠️ 技術棧 (Tech Stack)
 
 * **程式語言**：Python 3.x
-* **圖形介面**：Tkinter (Python Standard Library)
+* **圖形介面**：Tkinter
 * **資料庫**：SQLite 3
 * **數據繪圖**：Matplotlib
 
