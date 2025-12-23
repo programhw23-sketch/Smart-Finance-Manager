@@ -13,16 +13,14 @@
 * **財務建議與預算追蹤**：使用者可設定每月預算上限，系統將自動分析當前消費狀態並給予健康警示。
 * **本地資料庫存取**：使用 `SQLite` 進行資料持久化儲存，程式關閉後資料不遺失。
 
-
-
 ---
 
 ## 系統架構
 
-本專案採用 **MVC (Model-View-Controller)** 的設計思想簡化而成：
+本專案採用 **MVC (Model-View-Controller)** 的設計思想開發：
 
-* **Model (資料層)**：`DBManager` 類別，負責所有 SQLite 資料庫的 CRUD 操作（增刪改查）。
-* **View / Controller (介面與邏輯層)**：`FinanceApp` 類別，負責 Tkinter GUI 渲染與使用者互動邏輯處理。
+* **Model (資料層)**：`DBManager` 類別，負責所有 SQLite 資料庫的 CRUD 操作。
+* **View / Controller (介面與邏輯層)**：`FinanceApp` 類別，負責 Tkinter GUI 渲染與邏輯處理。
 
 
 
@@ -43,23 +41,7 @@
 ## 安裝與執行說明
 
 ### 1. 安裝必要套件
-本系統需要額外安裝 `matplotlib` 庫來支援圖表功能。請在終端機（Terminal/CMD）執行：
+本系統需要額外安裝 `matplotlib` 庫來支援圖表功能。請在終端機執行：
 
 ```bash
 pip install matplotlib
-
-## 🖥️ 系統介面展示
-
-### 1. 登入與權限管理
-系統支援多使用者登入，提供安全、私密的個人理財空間。
-![登入頁面](image_027204.png)
-
-### 2. 帳務紀錄與明細
-支援快速新增收支，並以直覺的表格呈現歷史交易紀錄。
-![新增紀錄](image_027261.png)
-![收支明細](image_0272dd.png)
-
-### 3. 數據視覺化與預算控制
-自動生成支出比例圖，並根據每月預算目標提供即時的財務健檢建議。
-![圓餅圖分析](image_02729d.png)
-![財務健檢建議](image_0272bb.png)
