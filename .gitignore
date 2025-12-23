@@ -1,0 +1,15 @@
+# Python 暫存檔
+__pycache__/
+*.py[cod]
+
+# 打包工具產生的資料夾
+build/
+dist/
+*.spec
+
+# 資料庫檔案 (建議不要上傳，讓使用者自行產生)
+*.db
+
+# 虛擬環境
+venv/
+.venv/
